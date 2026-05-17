@@ -1,6 +1,6 @@
 // src/services/paymentService.js
 import { parseJsonResponse } from "./fetchUtils";
-import { API_ENDPOINTS } from "../config/apiConfig";
+import { API_ENDPOINTS } from "../config/apiConfig.ts";
 
 export const getAllPayments = async () => {
   try {
