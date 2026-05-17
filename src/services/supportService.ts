@@ -1,4 +1,4 @@
-import { API_ENDPOINTS } from "../config/apiConfig.ts";
+import { API_ENDPOINTS } from "../config/apiConfig";
 
 const API_URL = API_ENDPOINTS.TICKETS;
 

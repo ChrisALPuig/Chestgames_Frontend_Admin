@@ -1,5 +1,5 @@
 import { parseJsonResponse } from "./fetchUtils";
-import { AUTH_ENDPOINTS } from "../config/apiConfig.ts";
+import { AUTH_ENDPOINTS } from "../config/apiConfig";
 
 export async function loginAdmin({ username, password }) {
   const res = await fetch(`${AUTH_ENDPOINTS.LOGIN}`, {

@@ -3,28 +3,28 @@
  * Automatically determines the API base URL based on the environment
  */
 
-const getApiBaseUrl = () => {
+const getApiBaseUrl = (): string => {
   // En desarrollo (localhost)
   if (import.meta.env.DEV) {
     return 'http://localhost:8080/api';
   }
-  
+
   // En producción
   return 'https://chestgames.onrender.com/api';
 };
 
-const getAuthBaseUrl = () => {
+const getAuthBaseUrl = (): string => {
   // En desarrollo (localhost)
   if (import.meta.env.DEV) {
     return 'http://localhost:8080/auth';
   }
-  
+
   // En producción
   return 'https://chestgames.onrender.com/auth';
 };
 
-export const API_BASE_URL = getApiBaseUrl();
-export const AUTH_BASE_URL = getAuthBaseUrl();
+export const API_BASE_URL: string = getApiBaseUrl();
+export const AUTH_BASE_URL: string = getAuthBaseUrl();
 
 // URLs específicas por servicio
 export const API_ENDPOINTS = {
