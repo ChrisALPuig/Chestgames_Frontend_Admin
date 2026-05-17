@@ -8,7 +8,7 @@ const getApiBaseUrl = () => {
   if (import.meta.env.DEV) {
     return 'http://localhost:8080/api';
   }
-  
+
   // En producción
   return 'https://chestgames.onrender.com/api';
 };
@@ -18,7 +18,7 @@ const getAuthBaseUrl = () => {
   if (import.meta.env.DEV) {
     return 'http://localhost:8080/auth';
   }
-  
+
   // En producción
   return 'https://chestgames.onrender.com/auth';
 };
@@ -30,10 +30,10 @@ export const AUTH_BASE_URL = getAuthBaseUrl();
 export const API_ENDPOINTS = {
   PAYMENTS: `${API_BASE_URL}/payments`,
   TICKETS: `${API_BASE_URL}/tickets`,
-} as const;
+};
 
 export const AUTH_ENDPOINTS = {
   LOGIN: `${AUTH_BASE_URL}/login`,
-} as const;
+};
 
 export default API_BASE_URL;
